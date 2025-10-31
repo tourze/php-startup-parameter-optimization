@@ -1,0 +1,23 @@
+{
+  "name": "tourze/php-startup-parameter-optimization",
+  "description": "PHP startup parameter optimization for OPcache and JIT configuration",
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "composer-runtime-api": "^2.0"
+  },
+  "require-dev": {
+    "phpstan/phpstan": "^2.1",
+    "phpunit/phpunit": "^11.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Tourze\\PHPStartupParameterOptimization\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tourze\\PHPStartupParameterOptimization\\Tests\\": "tests/"
+    }
+  }
+}
