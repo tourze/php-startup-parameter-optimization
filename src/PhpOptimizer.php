@@ -28,12 +28,6 @@ final class PhpOptimizer
 
     private function detectJitSupport(): bool
     {
-        // JIT requires PHP 8.0+
-        // @phpstan-ignore-next-line
-        if (PHP_VERSION_ID < 80000) {
-            return false;
-        }
-
         // JIT requires OPcache
         if (!$this->detectOpcacheSupport()) {
             return false;
@@ -169,11 +163,6 @@ final class PhpOptimizer
 
     private function getJitUnsupportedReason(): string
     {
-        // @phpstan-ignore-next-line
-        if (PHP_VERSION_ID < 80000) {
-            return sprintf('PHP version %s is below 8.0', PHP_VERSION);
-        }
-
         if (!$this->detectOpcacheSupport()) {
             return 'JIT requires OPcache to be enabled';
         }
