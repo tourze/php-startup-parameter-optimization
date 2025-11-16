@@ -157,17 +157,17 @@ class CustomPhpOptimizer extends PhpOptimizer
 ### Common Issues
 
 1. **JIT not available**
-   - Ensure PHP 8.0 or higher
-   - Check if OPcache extension is loaded
-   - Verify PHP was compiled with JIT support
+    - Ensure PHP 8.0 or higher
+    - Check if OPcache extension is loaded
+    - Verify PHP was compiled with JIT support
 
 2. **OPcache not working**
-   - Install and enable OPcache extension
-   - Check PHP configuration: `php -m | grep OPcache`
+    - Install and enable OPcache extension
+    - Check PHP configuration: `php -m | grep OPcache`
 
 3. **Performance degradation**
-   - Monitor OPcache statistics with `opcache_get_status()`
-   - Adjust memory settings if cache is full
+    - Monitor OPcache statistics with `opcache_get_status()`
+    - Adjust memory settings if cache is full
 
 ### Debug Information
 

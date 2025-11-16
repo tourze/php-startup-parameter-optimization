@@ -157,17 +157,17 @@ class CustomPhpOptimizer extends PhpOptimizer
 ### 常见问题
 
 1. **JIT 不可用**
-   - 确保 PHP 8.0 或更高版本
-   - 检查是否加载了 OPcache 扩展
-   - 验证 PHP 编译时是否包含 JIT 支持
+    - 确保 PHP 8.0 或更高版本
+    - 检查是否加载了 OPcache 扩展
+    - 验证 PHP 编译时是否包含 JIT 支持
 
 2. **OPcache 不工作**
-   - 安装并启用 OPcache 扩展
-   - 检查 PHP 配置：`php -m | grep OPcache`
+    - 安装并启用 OPcache 扩展
+    - 检查 PHP 配置：`php -m | grep OPcache`
 
 3. **性能下降**
-   - 使用 `opcache_get_status()` 监控 OPcache 状态
-   - 如果缓存满了，调整内存设置
+    - 使用 `opcache_get_status()` 监控 OPcache 状态
+    - 如果缓存满了，调整内存设置
 
 ### 调试信息
 
